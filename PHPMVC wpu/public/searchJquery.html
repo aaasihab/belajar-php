@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete dengan Bootstrap</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-home"></i> Navbar
+        </a>
+        <!-- Isi Navbar -->
+    </nav>
+    <div class="container bg-primary text-white mt-4">
+        <!-- Isi Konten -->
+        <p>Ini adalah container dengan background warna biru. <i class="fas fa-check-circle"></i></p>
+        
+        <div class="form-group">
+            <label for="search">Pencarian:</label>
+            <input type="text" id="search" class="form-control" placeholder="Cari...">
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+            $("#search").autocomplete({
+                source: availableTags
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "name": "sihab/php-composer",
+    "description": "PHP Composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ahmad Sihabillah"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AhmadSihabillah\\" : "src/"
+        }
+    },
+    "require": {
+        "monolog/monolog" : "2.2.0",
+        "fakerphp/faker": "^1.23"
+    }
+}

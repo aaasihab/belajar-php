@@ -1,0 +1,73 @@
+body.home-container {
+    font-family: tahoma;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+table.home-table {
+    width: 1000px;
+    border-collapse: collapse;
+}
+
+table.home-table th, td {
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 100%;
+    padding: 5px 20px;
+}
+
+tr.home-thead th {
+    background-color: rgba(255, 110, 139, 0.906);
+}
+
+tr#genap {
+    background-color: #d7d7d7bb;
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 8px;
+    gap: 10px;
+}
+
+.crud {
+    text-decoration: none;
+}
+
+
+.crud span{
+    padding: 6px;
+    background-color: rgba(0, 0, 255, 0.669);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.crud span:hover {
+    background-color: white;
+}
+
+span {
+    color: white;
+    font-weight: bolder;
+    font-size: 90%;
+}
+
+span:hover {
+    color: rgba(0, 0, 255, 0.669);
+}
+
+.logout {
+    text-decoration: none;
+    position: relative;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+}
+
+.logout:hover {
+    color: rgb(0, 72, 255);
+}

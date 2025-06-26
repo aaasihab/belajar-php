@@ -1,0 +1,30 @@
+{
+    "name": "ahmad-sihabillah/belajar-php-mvc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ahmad Sihabillah",
+            "email": "asihab58@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php" : ">=8"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit" : "9.5.8"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "AhmadSihabillah\\MVC\\" : "app"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "AhmadSihabillah\\MVC\\" : "tests"
+        }
+    }
+}

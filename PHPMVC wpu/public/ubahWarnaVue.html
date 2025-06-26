@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Warna Tombol di Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+    <div id="app" class="container bg-primary text-white mt-4">
+        <!-- Isi Konten -->
+        <p>Ini adalah container dengan background warna biru. <i class="fas fa-check-circle"></i></p>
+        
+        <div class="form-group">
+            <label for="search">Pencarian:</label>
+            <input type="text" id="search" class="form-control" placeholder="Cari...">
+        </div>
+        
+        <!-- Tombol yang warnanya dapat diubah -->
+        <button @click="changeColor" :class="btnClass">Klik Saya</button>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                btnClass: 'btn btn-primary' // Kelas awal tombol
+            },
+            methods: {
+                changeColor: function() {
+                    // Mengubah kelas tombol untuk mengubah warna
+                    this.btnClass = 'btn btn-dark'; // Mengubah warna ke merah
+                }
+            }
+        });
+    </script>
+</body>
+</html>
